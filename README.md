@@ -100,7 +100,7 @@ chapter of the documentation.
 
 Generally, this bundle works by applying *filter sets* to images from inside
 a template. Your *filter sets* are defined within the application's configuration
-file (often `app/config/config.yml`) and are comprised of a collection of
+file (often `app/config/config.yml` or `app/config/packages/liip_imagine.yaml`) and are comprised of a collection of
 *filters*, *post-processors*, and other optional parameters.
 
 We'll learn more about *post-processors* and other available parameters later,
@@ -117,6 +117,8 @@ operate correctly. Use the following boilerplate in your configuration file.
 
 ```yml
 # app/config/config.yml
+# or
+# app/config/packages/liip_imagine.yaml
 
 liip_imagine :
 
@@ -150,6 +152,8 @@ name `my_thumb`) with two *filters* configured: the `thumbnail` and `background`
 
 ```yml
 # app/config/config.yml
+# or
+# app/config/packages/liip_imagine.yaml
 
 liip_imagine :
     resolvers :
